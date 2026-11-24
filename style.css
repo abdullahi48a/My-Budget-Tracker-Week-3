@@ -1,0 +1,206 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* Color Palette */
+:root {
+    --primary: #2563EB;
+    --primary-dark: #1D4ED8;
+    --background: #F1F5F9;
+    --white: #FFFFFF;
+    --heading: #0F172A;
+    --text: #334155;
+    --border: #E2E8F0;
+    --success: #16A34A;
+}
+
+/* Style the whole page */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 30px;
+}
+
+/* Main heading card */
+h1 {
+    font-family: 'Merriweather', serif;
+    color: var(--heading);
+    text-align: center;
+    background-color: var(--white);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+/* Section headings */
+h2 {
+    font-family: 'Merriweather', serif;
+    color: var(--heading);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Add Expense card */
+.add-expense-section {
+    background-color: var(--white);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Expenses Table card */
+.expenses-section {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Input fields */
+input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+/* Expense name input */
+#expense-name {
+    background-color: #F8FAFC;
+}
+
+/* Input focus effect */
+input:focus {
+    outline: 2px solid var(--primary);
+    border-color: var(--primary);
+}
+
+/* Category dropdown */
+select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--white);
+}
+
+/* Expense table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Table headers and cells */
+th, td {
+    border: 1px solid var(--border);
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Table header */
+th {
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #F8FAFC;
+}
+
+/* Table row hover */
+tr:hover {
+    background-color: #DBEAFE;
+}
+
+/* Buttons */
+button {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+button:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Table content */
+.expenses-section td {
+    font-size: 14px;
+}
+
+/* Negation selector */
+input:not([type="submit"]) {
+    background-color: #F8FAFC;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        margin: 12px;
+    }
+
+    .add-expense-section,
+    .expenses-section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    th, td {
+        padding: 9px;
+        font-size: 12px;
+    }
+}
+/* Form and Button Styling */
+
+input {
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+}
